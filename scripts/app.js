@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     buttonDelete.addEventListener('click', () => {
         let deleteId = document.getElementById('deleteId');
-        fetch('http://localhost:3000/listado/' + deleteId.value, {
+        fetch('https://654100a845bedb25bfc30be2.mockapi.io/users' + deleteId.value, {
             method: 'DELETE',
         })
             .then(response => {
@@ -23,6 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     buttonSearch.addEventListener('click', () => {
         let searchId = document.getElementById('searchId');
-        window.location.href = 'http://localhost:3000/listado/' + searchId.value;
+        window.location.href = 'https://654100a845bedb25bfc30be2.mockapi.io/users' + searchId.value;
     });
 });
